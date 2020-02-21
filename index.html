@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Registration</title>
+	<link rel="stylesheet" href="css/styles.css">
+	<link rel="stylesheet" href="css/normalize.css">
+</head>
+<body>
+	<section>
+		<div class="form__wrapper">
+			<div class="form__box register-form">
+				<h2 class="form__box-title">Sign up</h2>
+				<div class="error__submit"></div>
+				<form id="formtest" onsubmit="return validation()">
+					<div class="input__wrapper">
+						<input id="first-name" type="text" class="form__input" placeholder="First name">
+					</div>
+					<div class="input__wrapper">
+						<input id="last-name" type="text" class="form__input" placeholder="Last name">
+					</div>
+					<div class="input__wrapper">
+						<input id="email" type="email" class="form__input" placeholder="e-mail">
+					</div>
+					<div class="input__wrapper">
+						<input id="password" type="password" class="form__input" placeholder="Password">
+					</div>
+					<button class="form__button" type="submit">sign up</button>
+					<p class="form__text">Already registered ? <a href="#" class="form__link">Sign in</a></p>
+				</form>
+			</div>
+			<div class="form__box login-form">
+				<h2 class="form__box-title">Sign in</h2>
+				<div class="error__submit"></div>
+				<form id="formtest" onsubmit="return validation()">
+					<div class="input__wrapper">
+						<input id="email" type="email" class="form__input" placeholder="e-mail">
+					</div>
+					<div class="input__wrapper">
+						<input id="password" type="password" class="form__input" placeholder="Password">
+					</div>
+					<button class="form__button" type="submit">sign in</button>
+					<p class="form__text">No registered ? <a href="#" class="form__link">Register</a></p>
+				</form>
+			</div>
+		</section>
+		<script src="js/jquery.min.js"></script>
+		<script src="js/main.js"></script>
+	</body>
+	</html>
