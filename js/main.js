@@ -1,8 +1,8 @@
 function validation(){
 	var firstName = document.querySelector('#first-name').value;
 	var lastName = document.querySelector('#last-name').value;
-	var email = document.querySelector('#email').value;
-	var password = document.querySelector('#password').value;
+	var email = document.querySelectorAll('#email').value;
+	var password = document.querySelectorAll('#password').value;
 	var errorText = document.querySelector('.error__submit');
 	var error;
 	
